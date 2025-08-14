@@ -23,13 +23,13 @@ It works around the API's 9999-item pagination limit by sequentially scraping sm
 3.  **Execution**:
     Run the scraper using the `scrape` command. All files will be saved to a single output directory.
 
-    * **Run with defaults:**
+    * **Run with defaults(recommended):**
         ```bash
         uv run scrape
         ```
     * **Run with custom arguments:**
         ```bash
-        uv run scrape --page_size 1000 --concurrency 20 --output_dir ./my_data
+        uv run scrape --page_size 500 --concurrency 20 --output_dir ./my_data
         ```
     * **See all options:**
         ```bash
