@@ -1,0 +1,42 @@
+# Dados.gov.br Scraper
+
+This script efficiently downloads all dataset **metadata** from Brazil's open data portal, [dados.gov.br](https://dados.gov.br/).
+
+It works around the API's 9999-item pagination limit by sequentially scraping smaller categories based on license type (`cc-by`, `cc-zero`, etc.). This ensures a complete and successful download of all available metadata.
+
+## How to Run
+
+1.  **Prerequisites**:
+    * Python 3.8+
+    * [uv](https://github.com/astral-sh/uv)
+
+2.  **Installation**:
+    From your project's root directory, install the dependencies and the script command:
+    ```bash
+    uv sync
+    ```
+
+3.  **Execution**:
+    Run the scraper using the `scrape` command. All files will be saved to a single output directory.
+
+    * **Run with defaults:**
+        ```bash
+        uv run scrape
+        ```
+    * **Run with custom arguments:**
+        ```bash
+        uv run scrape --page_size 1000 --concurrency 20 --output_dir ./my_data
+        ```
+    * **See all options:**
+        ```bash
+        uv run scrape --help
+        ```
+
+## Command-Line Arguments
+
+| Argument      | Default        | Description                                     |
+| :------------ | :------------- | :---------------------------------------------- |
+| `--page_size`   | `500`          | Records to fetch per API request.               |
+| `--concurrency` | `10`           | Max number of parallel download requests.       |
+| `--timeout`     | `60`           | Timeout in seconds for each HTTP request.       |
+| `--output_dir`  | `scraped_data` | Directory to save the output `.json` files.     |

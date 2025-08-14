@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+venv/
+env/
+
+# Compiled Python bytecode
+*.pyc
+__pycache__/
+
+# IDE/Editor files
+.idea/
+.vscode/
+.DS_Store
+
+# Log files and local databases
+*.log
+db.sqlite3
+
+# Build artifacts
+dist/
+build/
+
+# Scraped files
+*.json
