@@ -2,7 +2,7 @@
 
 This script efficiently downloads all dataset **metadata** from Brazil's open data portal, [dados.gov.br](https://dados.gov.br/).
 
-It works around the API's 9999-item pagination limit by sequentially scraping smaller categories based on license type (`cc-by`, `cc-zero`, etc.). This ensures a complete and successful download of all available metadata.
+It works around the API's 9999-item pagination limit by sequentially scraping smaller categories based on license type (`cc-by`, `cc-zero`, etc.). This ensures a complete and successful download of (almost) all available metadata.
 
 ## How to Run
 
@@ -11,6 +11,7 @@ It works around the API's 9999-item pagination limit by sequentially scraping sm
     * [uv](https://github.com/astral-sh/uv)
 
 2.  **Installation**:
+    Clone this repository.
     From your project's root directory, install the dependencies and the script command:
     ```bash
     uv sync
