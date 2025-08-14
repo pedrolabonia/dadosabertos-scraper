@@ -13,7 +13,7 @@ It works around the API's 9999-item pagination limit by sequentially scraping sm
     * [uv](https://github.com/astral-sh/uv)
 
 2.  **Installation**:
-    Clone this repository.
+    Clone this repository, and use `uv sync` to create the venv and install the necessary packages
     ```bash
       git clone https://github.com/pedrolabonia/dadosabertos-scraper.git`
       cd dadosabertos-scraper
