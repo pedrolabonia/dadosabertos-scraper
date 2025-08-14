@@ -37,10 +37,11 @@ It works around the API's 9999-item pagination limit by sequentially scraping sm
         ```
 
 ## Command-Line Arguments
+Recommended a 90s timeout since the API can take a while.
 
 | Argument      | Default        | Description                                     |
 | :------------ | :------------- | :---------------------------------------------- |
 | `--page_size`   | `500`          | Records to fetch per API request.               |
 | `--concurrency` | `10`           | Max number of parallel download requests.       |
-| `--timeout`     | `60`           | Timeout in seconds for each HTTP request.       |
+| `--timeout`     | `90`           | Timeout in seconds for each HTTP request.       |
 | `--output_dir`  | `scraped_data` | Directory to save the output `.json` files.     |
