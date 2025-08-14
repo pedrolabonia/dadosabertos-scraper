@@ -4,7 +4,7 @@ This script efficiently downloads all dataset **metadata** from Brazil's open da
 
 The metadata has many goodies such as direct links to the dataset downloads, file formats, tags, full description, etc.
 
-It works around the API's 9999-item pagination limit by sequentially scraping smaller categories based on license type (`cc-by`, `cc-zero`, etc.). This ensures a complete and successful download of (almost) all available metadata.
+It works around the API's 9999-item pagination limit by sequentially scraping smaller categories based on license type (`cc-by`, `cc-zero`, etc.). This ensures a successful download of (almost) all available metadata - scrapes 11600 out of 14666 total at the time of writing this readme.
 
 ## How to Run
 
