@@ -9,14 +9,15 @@ It works around the API's 9999-item pagination limit by sequentially scraping sm
 ## How to Run
 
 1.  **Prerequisites**:
-    * Python 3.8+
+    * Python 3.11+
     * [uv](https://github.com/astral-sh/uv)
 
 2.  **Installation**:
     Clone this repository.
-    From your project's root directory, install the dependencies and the script command:
     ```bash
-    uv sync
+      git clone https://github.com/pedrolabonia/dadosabertos-scraper.git`
+      cd dadosabertos-scraper
+      uv sync
     ```
 
 3.  **Execution**:
